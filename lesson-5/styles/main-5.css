@@ -1,0 +1,32 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}
+
+body {
+  font-size: 16px;
+  font-family: sans-serif; /* Declare the base font-family */
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 10%; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+header {}
+header h1 {}
+header img {}
+header .subheading {}
+
+nav {}
+nav button {}
+nav ul {}
+nav ul li {}
+nav ul li a {}
+nav ul li.active a {}
+nav ul li a:hover {}
+
+main {}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { }
+
+footer {}
