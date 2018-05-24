@@ -104,7 +104,7 @@
         margin-left: 4.5vw;
         width: 95%;
         font-size: 3vw;
-        color: dimgray;
+        color: #2A4F6E;
         border-collapse: collapse;
         border: 1px solid black;
         box-shadow: 3px 3px 4px gray;
@@ -122,7 +122,8 @@
 
     section.forecast tbody
     {
-        color: gray;
+        color: #2A4F6E;
+        color: #2A4F6E;
     }
 
     section.forecast

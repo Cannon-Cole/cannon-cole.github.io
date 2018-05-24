@@ -9,7 +9,7 @@ body {
     font-size: 16px;
     font-family: verdana, geneva, sans-serif; 
 
-    background-color: lightgray;
+    background-color: #E7EFF5;
     min-width: 0px;
     max-width: 100vw;
 }
@@ -24,7 +24,7 @@ header
 {
     margin-left: 2vw;
     padding-bottom: 10px;
-    background-color: dimgray;
+    background-color: #06223A;
 }
 
 header h1 
@@ -39,7 +39,20 @@ header h1
 
     font-size: 5vw;
 
-    color: black;
+    color: #E7EFF5;
+}
+
+header .subheading 
+{
+    position: relative;
+    left: 25vw;
+    top: -4vw;
+
+    font-size: 4vw;
+    color: #E7EFF5;
+
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 header img 
@@ -51,19 +64,6 @@ header img
 
     margin-top: 1%;
     margin-left: 2%;
-}
-
-header .subheading 
-{
-    position: relative;
-    left: 25vw;
-    top: -4vw;
-
-    font-size: 4vw;
-    color: black;
-
-    margin-right: 20px;
-    margin-bottom: 20px;
 }
 
 button.navbutton
@@ -102,7 +102,7 @@ nav ul
     padding-right: 2vw;
 
     width: 95%;
-    background-color: gray;
+    background-color: #6B89A2;
 }
 
 nav ul li 
@@ -130,7 +130,7 @@ nav ul li:last-child a
 
 nav ul li a:hover 
 {
-    text-shadow: 0px 0px 15px lightgray;
+    text-shadow: 0px 0px 15px #E7EFF5;
 }
 
 main figure 
@@ -152,21 +152,21 @@ main h2
 {
     text-align: center;
     font-size: 2.5em;
-    color: black;
+    color: #06223A;
 }
 
 main h3
 {
     text-align: center;
     font-size: 4vw;
-    color: black;
+    color: #06223A;
 }
 
 main section.forecast h3
 {
     text-align: center;
     font-size: 5vw;
-    color: black;
+    color: #06223A;
     width: 100%;
     margin-left: 6%;
 }
@@ -181,7 +181,7 @@ div.current
 div.current p
 {
     display: inline-block; 
-    color: dimgray;
+    color: #2A4F6E;
 
 }
 
@@ -202,7 +202,7 @@ div.current img
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
-    color: dimgray;
+    color: #2A4F6E;
     text-shadow: 0px 0px 0px gray;
 }
 
@@ -216,13 +216,14 @@ div.current img
 {
     margin-left: 20px;
     margin-right: 20px;
-    color: dimgray;
+    color: #2A4F6E;
     text-shadow: 0px 0px 0px gray;
 }
 
 section.forecast 
 { 
     display: none;
+    max-width: 95%;
 }
 
 article
@@ -246,7 +247,7 @@ article p
     text-align: center;
     margin-top: 0px;
     margin-bottom: 3%;
-    color: dimgray;
+    color: #2A4F6E;
 
 }
 
@@ -254,25 +255,27 @@ footer
 {
     font-size: small;
     margin-left: 2.5%;
-    background-color: gray;
-    line-height: 7vw;
-    vertical-align: middle;
+    background-color: #6B89A2;
     box-shadow: 3px 3px 4px gray;
 }
 
 footer section.contact
 {
+    line-height: 8vw;
     text-align: center;
+    vertical-align: middle;
     margin-top: 2%;
-    margin-bottom: 2%;
+    color: #E7EFF5;
 }
 
 footer section.footer-bar
 {
+    line-height: 9vw;
+    vertical-align: middle;
     text-align: center;
     width 100%;
-    margin-top: 2%;
     margin-bottom: 2%;
     padding: 10px;
-    background-color: dimgray
+    background-color: #06223A;
+    color: #E7EFF5;
 }
