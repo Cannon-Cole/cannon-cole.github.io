@@ -5,7 +5,7 @@
 body {
     font-size: 16px;
     font-family: verdana, geneva, sans-serif; /* Declare the base font-family */
-    background-color: antiquewhite;
+    background-color: white;
     min-width: 0px;
     max-width: 100vw;
 }
@@ -27,7 +27,7 @@ header h1
     max-width: 70%;
 
     margin-top: 3%;
-    margin-left: 1%;
+    margin-left: 0.5%;
     margin-right: 25px;
 
     font-size: 5vw;
@@ -38,6 +38,9 @@ header img
     max-height: 100%;
     max-width: 30%;
     float: left;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-bottom: 2%;
 }
 
 header .subheading 
@@ -50,12 +53,16 @@ header .subheading
     margin-bottom: 20px;
 }
 
-button
+button.navbutton
 {
     position: relative;
-    left: 10px;
-    top: -40px;
-    background-image: url("https://github.com/Cannon-Cole/cannon-cole.github.io/blob/master/images/rain.png");
+    left: 5vw;
+    top: -8vw;
+    margin-right: 5px;
+    border: none;
+    background: none;  
+    size: 102x;
+   
 }
 
 div.button-holder
@@ -70,7 +77,6 @@ nav
     display: none;
 }
 
-nav button {}
 nav ul 
 {
     height: auto;
@@ -93,9 +99,75 @@ nav ul li.active a {}
 nav ul li a:hover {}
 
 main {}
-main h2 {}
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { }
+
+main figure 
+{ 
+    margin: 0 0 .2rem 2%; 
+    width: 100.6%;
+    height: 47.474vw;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+main h2
+{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+main h3
+{
+    text-align: center;
+    font-size: 4vw;
+}
+
+div.current
+{
+    text-align: center;
+    font-size: 2em;
+    0176
+}
+
+div.current img
+{
+    vertical-align: middle;
+    margin-left: 10%;
+}
+
+main .current p
+{
+    display: inline-block; 
+}
+
+main figure img 
+{ 
+    height: 47vw;
+}
+
+.highlow
+{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.highlow p
+{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.conditions
+{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.conditions p
+{
+margin-left: 20px;
+    margin-right: 20px;
+}
 
 section.forecast { display: none;}
 

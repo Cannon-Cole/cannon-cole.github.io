@@ -7,7 +7,16 @@
 
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
 
-    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    nav
+    {
+        display: contents;
+    }
+    
+    button.navbutton
+    {
+        display: none;
+    }
+
 
     section.forecast { display: contents}  /* show the 10-day forecast with the medium view and up */
 
