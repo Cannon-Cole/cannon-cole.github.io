@@ -1,12 +1,15 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box;}
+* 
+{
+    box-sizing: border-box;
+}
 
 body {
     font-size: 16px;
     font-family: verdana, geneva, sans-serif; 
-    
-    background-color: aquamarine;
+
+    background-color: lightgray;
     min-width: 0px;
     max-width: 100vw;
 }
@@ -14,6 +17,14 @@ body {
 header, nav, main, footer 
 {
     max-width: 95%; 
+
+}
+
+header
+{
+    margin-left: 2vw;
+    padding-bottom: 10px;
+    background-color: dimgray;
 }
 
 header h1 
@@ -27,21 +38,19 @@ header h1
     margin-right: 25px;
 
     font-size: 5vw;
-    
-    color: dimgray
+
+    color: black;
 }
 
 header img 
 {
     max-height: 100%;
     max-width: 30%;
-    
+
     float: left;
-    
+
     margin-top: 1%;
     margin-left: 2%;
-    margin-bottom: 2%;
-    
 }
 
 header .subheading 
@@ -49,10 +58,10 @@ header .subheading
     position: relative;
     left: 25vw;
     top: -4vw;
-    
+
     font-size: 4vw;
-    color: gray;
-    
+    color: black;
+
     margin-right: 20px;
     margin-bottom: 20px;
 }
@@ -60,13 +69,13 @@ header .subheading
 button.navbutton
 {
     position: relative;
-    left: 5vw;
+    left: 1vw;
     top: -8vw;
-    
+
     margin-right: 5px;
-    
+
     border: none;
-    
+
     background: none;
 
 }
@@ -74,8 +83,6 @@ button.navbutton
 div.button-holder
 {
     float: right;
-    margin-left: 10px;
-    padding-left: 0px;
 }
 
 nav 
@@ -86,24 +93,32 @@ nav
 nav ul 
 {
     display: inline-block;
-    
+
     margin: 0px;
-    
+    margin-left: 2vw;
+    margin-bottom: 1vw;
+
     padding: 2vw;
+    padding-right: 2vw;
+
+    width: 95%;
+    background-color: gray;
 }
 
 nav ul li 
 {
     display: inline-block;
-    
-    font-size: 2.8vw
+    padding-left: .3vw;
+    padding-left: .3vw;
+    font-size: 2.5vw;
 }
 
 nav ul li a 
 {
     text-decoration: none;
-    padding-right: 1vw;
-    padding-left: 1vw;
+
+    padding-right: 2vw;
+    padding-left: .4vw;
     border-right: 1px solid black;
 }
 
@@ -115,14 +130,14 @@ nav ul li:last-child a
 
 nav ul li a:hover 
 {
-    text-shadow: 0px 0px 18px #2492fe;
+    text-shadow: 0px 0px 15px lightgray;
 }
 
 main figure 
 { 
-    margin: 0 0 .2rem 2%; 
-    width: 100.6%;
+    margin: 0 0 2px 2vw; 
     height: 47.474vw;
+    width: 95vw;
     overflow: hidden;
     border: 1px solid black;
     box-shadow: 3px 3px 5px gray;
@@ -137,21 +152,21 @@ main h2
 {
     text-align: center;
     font-size: 2.5em;
-    color: dimgray;
+    color: black;
 }
 
 main h3
 {
     text-align: center;
     font-size: 4vw;
-    color: dimgray;
+    color: black;
 }
 
 main section.forecast h3
 {
     text-align: center;
     font-size: 5vw;
-    color: dimgray;
+    color: black;
     width: 100%;
     margin-left: 6%;
 }
@@ -166,7 +181,8 @@ div.current
 div.current p
 {
     display: inline-block; 
-    color: gray;
+    color: dimgray;
+
 }
 
 div.current img
@@ -186,6 +202,8 @@ div.current img
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
+    color: dimgray;
+    text-shadow: 0px 0px 0px gray;
 }
 
 .conditions
@@ -198,6 +216,8 @@ div.current img
 {
     margin-left: 20px;
     margin-right: 20px;
+    color: dimgray;
+    text-shadow: 0px 0px 0px gray;
 }
 
 section.forecast 
@@ -226,6 +246,7 @@ article p
     text-align: center;
     margin-top: 0px;
     margin-bottom: 3%;
+    color: dimgray;
 
 }
 
@@ -233,9 +254,10 @@ footer
 {
     font-size: small;
     margin-left: 2.5%;
-    background-color: #2492fe;
+    background-color: gray;
     line-height: 7vw;
     vertical-align: middle;
+    box-shadow: 3px 3px 4px gray;
 }
 
 footer section.contact
@@ -252,5 +274,5 @@ footer section.footer-bar
     margin-top: 2%;
     margin-bottom: 2%;
     padding: 10px;
-    background-color: #2173e4
+    background-color: dimgray
 }

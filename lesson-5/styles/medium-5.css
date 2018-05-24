@@ -1,12 +1,5 @@
 @media only screen and (min-width: 600px) {
 
-    body
-    {
-        background-color: white;
-    }
-
-    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
-
     nav
     {
         display: contents;
@@ -48,7 +41,7 @@
         margin-bottom: 0px;
     }
 
-    div.right-align
+    div.right-box
     {
         display: inline-block;
         width: 43vw;
@@ -112,6 +105,19 @@
         width: 95%;
         font-size: 3vw;
         color: dimgray;
+        border-collapse: collapse;
+        border: 1px solid black;
+        box-shadow: 3px 3px 4px gray;
+    }
+
+    section.forecast th
+    {
+        border: 1px solid black;
+    }
+
+    section.forecast td
+    {
+        border: 1px solid black;
     }
 
     section.forecast tbody
@@ -125,10 +131,11 @@
         display: contents;
         clear: both;
     }
-    
+
     article
     {
-             margin-top: 2%;
+        margin-top: 2%;
+        box-shadow: 3px 3px 4px gray;
     }
 
 }
