@@ -4,20 +4,16 @@
 
 body {
     font-size: 16px;
-    font-family: verdana, geneva, sans-serif; /* Declare the base font-family */
-    background-color: white;
+    font-family: verdana, geneva, sans-serif; 
+    
+    background-color: aquamarine;
     min-width: 0px;
     max-width: 100vw;
 }
 
-header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-    max-width: 95%; 
-    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
-}
-
-header 
+header, nav, main, footer 
 {
-    width: 100vw;
+    max-width: 95%; 
 }
 
 header h1 
@@ -31,24 +27,32 @@ header h1
     margin-right: 25px;
 
     font-size: 5vw;
+    
+    color: dimgray
 }
 
 header img 
 {
     max-height: 100%;
     max-width: 30%;
+    
     float: left;
+    
     margin-top: 1%;
     margin-left: 2%;
     margin-bottom: 2%;
+    
 }
 
 header .subheading 
 {
     position: relative;
     left: 25vw;
-    top: -6vw;
+    top: -4vw;
+    
     font-size: 4vw;
+    color: gray;
+    
     margin-right: 20px;
     margin-bottom: 20px;
 }
@@ -58,10 +62,12 @@ button.navbutton
     position: relative;
     left: 5vw;
     top: -8vw;
+    
     margin-right: 5px;
+    
     border: none;
-    background: none;  
-    size: 102x;
+    
+    background: none;
 
 }
 
@@ -79,26 +85,38 @@ nav
 
 nav ul 
 {
-    height: auto;
-    padding: 20px;
+    display: inline-block;
+    
     margin: 0px;
+    
+    padding: 2vw;
 }
 
 nav ul li 
 {
-    display: inline;
-    padding: 20px;
+    display: inline-block;
+    
+    font-size: 2.8vw
 }
 
 nav ul li a 
 {
     text-decoration: none;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    border-right: 1px solid black;
 }
 
-nav ul li.active a {}
-nav ul li a:hover {}
+nav ul li:last-child a
+{
+    text-decoration: none;
+    border-right: none;
+}
 
-main {}
+nav ul li a:hover 
+{
+    text-shadow: 0px 0px 18px #2492fe;
+}
 
 main figure 
 { 
@@ -107,18 +125,35 @@ main figure
     height: 47.474vw;
     overflow: hidden;
     border: 1px solid black;
+    box-shadow: 3px 3px 5px gray;
+}
+
+main figure img 
+{ 
+    height: 47vw;
 }
 
 main h2
 {
     text-align: center;
     font-size: 2.5em;
+    color: dimgray;
 }
 
 main h3
 {
     text-align: center;
     font-size: 4vw;
+    color: dimgray;
+}
+
+main section.forecast h3
+{
+    text-align: center;
+    font-size: 5vw;
+    color: dimgray;
+    width: 100%;
+    margin-left: 6%;
 }
 
 div.current
@@ -128,20 +163,16 @@ div.current
     0176
 }
 
+div.current p
+{
+    display: inline-block; 
+    color: gray;
+}
+
 div.current img
 {
     vertical-align: middle;
-    margin-left: 10%;
-}
-
-main .current p
-{
-    display: inline-block; 
-}
-
-main figure img 
-{ 
-    height: 47vw;
+    margin-left: 2%;
 }
 
 .highlow
@@ -153,8 +184,8 @@ main figure img
 .highlow p
 {
     display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .conditions
@@ -169,7 +200,10 @@ main figure img
     margin-right: 20px;
 }
 
-section.forecast { display: none;}
+section.forecast 
+{ 
+    display: none;
+}
 
 article
 {
@@ -198,6 +232,10 @@ article p
 footer 
 {
     font-size: small;
+    margin-left: 2.5%;
+    background-color: #2492fe;
+    line-height: 7vw;
+    vertical-align: middle;
 }
 
 footer section.contact
@@ -213,4 +251,6 @@ footer section.footer-bar
     width 100%;
     margin-top: 2%;
     margin-bottom: 2%;
+    padding: 10px;
+    background-color: #2173e4
 }
