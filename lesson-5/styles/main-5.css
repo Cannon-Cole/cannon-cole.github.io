@@ -62,7 +62,7 @@ button.navbutton
     border: none;
     background: none;  
     size: 102x;
-   
+
 }
 
 div.button-holder
@@ -165,10 +165,52 @@ main figure img
 
 .conditions p
 {
-margin-left: 20px;
+    margin-left: 20px;
     margin-right: 20px;
 }
 
 section.forecast { display: none;}
 
-footer {}
+article
+{
+    margin-left: 5%;
+    border: 1px solid black;
+    padding-top: 1%;
+
+}
+
+article h3
+{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+article p
+{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 3%;
+
+}
+
+footer 
+{
+    font-size: small;
+}
+
+footer section.contact
+{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+footer section.footer-bar
+{
+    text-align: center;
+    width 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
