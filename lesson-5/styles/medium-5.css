@@ -22,35 +22,35 @@
         width: 50vw;
         height: 47vw;
         max-height: 70vw;
-
+        margin-left: 3vw;
     }
 
     main figure img 
     { 
-
         position: relative;
         left: -12vw;
-
     }
 
     main h2
     {
-        display: inline-block;
-
-        margin-left: 10vw;
+        text-align: center;
         margin-bottom: 0px;
     }
 
     div.right-box
     {
         display: inline-block;
-        width: 43vw;
+        text-align: center;
+        width: 42vw;
         height: 47vw;
+        border: 1px solid black;
+        box-shadow: 3px 3px 5px gray;
     }
 
     div.current h2
     {
         font-size: 1.5vw;
+        margin-left: 56vw;
     }
 
     div.current img
@@ -104,10 +104,11 @@
         margin-left: 4.5vw;
         width: 95%;
         font-size: 3vw;
-        color: #2A4F6E;
         border-collapse: collapse;
         border: 1px solid black;
         box-shadow: 3px 3px 4px gray;
+        background-color: #88afcf;
+        color: #2A4F6E;
     }
 
     section.forecast th
@@ -122,8 +123,7 @@
 
     section.forecast tbody
     {
-        color: #2A4F6E;
-        color: #2A4F6E;
+     
     }
 
     section.forecast
