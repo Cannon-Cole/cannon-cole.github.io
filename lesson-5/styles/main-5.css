@@ -135,7 +135,7 @@ nav ul li a:hover
     text-shadow: 0px 0px 15px #E7EFF5;
 }
 
-main figure 
+main figure
 { 
     margin: 0 0 2px 2vw; 
     height: 47.474vw;
@@ -164,6 +164,21 @@ main h3
     color: #06223A;
 }
 
+section.weather-summary h2
+{
+display: none;
+}
+
+section.contact h2
+{
+display: none;
+}
+
+section.footer-bar h2
+{
+display: none;
+}
+
 section.forecast 
 { 
     display: none;
@@ -184,7 +199,6 @@ div.current
 {
     text-align: center;
     font-size: 2em;
-    0176
 }
 
 div.current p
@@ -234,7 +248,6 @@ article
     margin-left: 5%;
     border: 1px solid black;
     padding-top: 1%;
-
 }
 
 article h3
@@ -242,7 +255,6 @@ article h3
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
-
 }
 
 article p
@@ -251,7 +263,13 @@ article p
     margin-top: 0px;
     margin-bottom: 3%;
     color: #2A4F6E;
+}
 
+article img 
+{ 
+    margin: 5%;
+    width: 90%;
+    height: 40vw;
 }
 
 footer 
@@ -276,7 +294,6 @@ footer section.footer-bar
     line-height: 9vw;
     vertical-align: middle;
     text-align: center;
-    width 100%;
     margin-bottom: 2%;
     padding: 10px;
     background-color: #06223A;
