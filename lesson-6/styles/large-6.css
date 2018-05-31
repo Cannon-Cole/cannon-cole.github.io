@@ -28,7 +28,6 @@
         top: 5vw;
 
         font-size: 3vw;
-
     }
 
     nav ul
@@ -64,8 +63,11 @@
         margin-top: 1vw;
     }
 
+    
     main figure picture img
     {
+        position:static;
+        
         max-width: 100%;
         max-height: 100%;
     }

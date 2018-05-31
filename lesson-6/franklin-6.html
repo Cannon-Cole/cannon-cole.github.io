@@ -11,6 +11,8 @@
         <link rel="stylesheet" media="screen and (min-width: 1024px)" href="styles/large-6.css">
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
         <meta charset="utf-8">
 
@@ -37,7 +39,7 @@
             </h1>
 
             <div class="button-holder">
-                <button class="navbutton"><i class="fa fa-bars fa-lg"></i></button></div>
+                <button class="navbutton">&#9776;</button></div>
 
         </header>
 
@@ -54,21 +56,19 @@
 
         <main>
             <figure>
-                <picture>
-                    <img src = "franklin-banner-small.jpeg" alt="Franklin City" size="1%"
-                         
+                <picture class="banner-large-small">
+                    <img src = "images/franklin-banner-large.jpeg" alt="Franklin City"
+
                          srcset = 
-                         
+
                          "images/franklin-banner-small.jpeg 600w,
-                          
+
                           images/franklin-banner-medium.jpeg 1026w,
-                          
+
                           images/franklin-banner-large.jpeg 1200w,">
-                    
-                    
-                    
-                    <img src="images/franklin-banner-large.jpeg" alt="Franklin City">
                 </picture>
+
+
 
             </figure>
             <div class="right-box">
@@ -152,6 +152,8 @@
                 &copy;2018 All Rights Reserved | Three City Weather | <span id="currentdate">Current Date Placeholder</span>
             </section>
         </footer>
+
+        <script type="text/javascript" src="scripts/currentdate.js"></script>
 
     </body>
 </html>

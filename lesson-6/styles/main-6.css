@@ -7,7 +7,7 @@
 
 body {
     font-size: 16px;
-    font-family: verdana, geneva, sans-serif; 
+    font-family: roboto, verdana, geneva, sans-serif; 
 
     background-color: #E7EFF5;
     min-width: 0px;
@@ -69,7 +69,7 @@ header img
 button.navbutton
 {
     position: relative;
-    left: 1vw;
+    left: -20%;
     top: -8vw;
 
     margin-right: 5px;
@@ -77,9 +77,11 @@ button.navbutton
     border: none;
 
     background: none;
-  
+
     color: #E7EFF5;
 
+    font-size: 150%;
+    
 }
 
 div.button-holder
@@ -92,49 +94,6 @@ nav
     display: none;
 }
 
-nav ul 
-{
-    display: inline-block;
-
-    margin: 0px;
-    margin-left: 2vw;
-    margin-bottom: 1vw;
-
-    padding: 2vw;
-    padding-right: 2vw;
-
-    width: 95%;
-    background-color: #6B89A2;
-}
-
-nav ul li 
-{
-    display: inline-block;
-    padding-left: .3vw;
-    padding-left: .3vw;
-    font-size: 2.5vw;
-}
-
-nav ul li a 
-{
-    text-decoration: none;
-
-    padding-right: 2vw;
-    padding-left: .4vw;
-    border-right: 1px solid black;
-}
-
-nav ul li:last-child a
-{
-    text-decoration: none;
-    border-right: none;
-}
-
-nav ul li a:hover 
-{
-    text-shadow: 0px 0px 15px #E7EFF5;
-}
-
 main figure
 { 
     margin: 1% 0 2px 2vw; 
@@ -143,6 +102,15 @@ main figure
     overflow: hidden;
     border: 1px solid black;
     box-shadow: 0px 3px 5px gray;
+}
+
+main figure picture img
+{
+    position: relative;
+    left: -25%;
+    max-width: 300%;
+    max-height: 100%;
+    
 }
 
 main figure img 
@@ -166,17 +134,17 @@ main h3
 
 section.weather-summary h2
 {
-display: none;
+    display: none;
 }
 
 section.contact h2
 {
-display: none;
+    display: none;
 }
 
 section.footer-bar h2
 {
-display: none;
+    display: none;
 }
 
 section.forecast 
