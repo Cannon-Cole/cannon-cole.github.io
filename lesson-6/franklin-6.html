@@ -10,15 +10,13 @@
 
         <link rel="stylesheet" media="screen and (min-width: 1024px)" href="styles/large-6.css">
 
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-        
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
         <meta charset="utf-8">
 
-        <meta name="description" content="Weather report for Franklin city">
-
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+        <meta name="description" content="Weather report for Franklin city">
 
         <title>
             Franklin City Weather Report
@@ -39,14 +37,14 @@
             </h1>
 
             <div class="button-holder">
-                <button class="navbutton">&#9776;</button></div>
+                <button onclick="toggleMenu()" class="navbutton">&#9776;</button></div>
 
         </header>
 
         <nav>
-            <ul>
+            <ul id="primaryNav" class="hide">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Franklin</a></li>
+                <li class="active"><a href="#">Franklin</a></li>
                 <li><a href="#">Greenville</a></li>
                 <li><a href="#">Springfield</a></li>
                 <li><a href="#">Storm Center</a></li>
@@ -154,6 +152,7 @@
         </footer>
 
         <script type="text/javascript" src="scripts/currentdate.js"></script>
+        <script type="text/javascript" src="scripts/toggle.js"></script>
 
     </body>
 </html>

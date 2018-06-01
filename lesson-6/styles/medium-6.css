@@ -1,11 +1,22 @@
 @media only screen and (min-width: 600px) {
 
-    nav
-    {
-        display: contents;
-    }
-
+  
     nav ul 
+    {
+        display: inline-block;
+
+        margin: 0px;
+        margin-left: 2vw;
+        margin-bottom: 1vw;
+
+        padding: 2vw;
+        padding-right: 2vw;
+
+        width: 95%;
+        background-color: #6B89A2;
+    }
+    
+    nav ul.hide
     {
         display: inline-block;
 
@@ -37,6 +48,10 @@
         padding-right: 2vw;
         padding-left: .4vw;
         border-right: 1px solid black;
+
+        border-top: none;
+
+        margin-right: 0px;
     }
 
     nav ul li:last-child a
@@ -48,6 +63,12 @@
     nav ul li a:hover 
     {
         text-shadow: 0px 0px 15px #E7EFF5;
+        background-color: rgba(0,0,0,0);
+    }
+
+    nav ul li.active a
+    {
+        background-color: rgba(0,0,0,0);
     }
 
     button.navbutton
