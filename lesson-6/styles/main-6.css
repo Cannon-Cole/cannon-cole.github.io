@@ -140,11 +140,8 @@ main figure
 
 main figure picture img
 {
-    position: relative;
-    left: -25%;
     max-width: 300%;
     max-height: 100%;
-
 }
 
 main figure img 

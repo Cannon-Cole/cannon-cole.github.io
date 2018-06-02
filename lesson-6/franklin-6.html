@@ -55,15 +55,15 @@
         <main>
             <figure>
                 <picture class="banner-large-small">
-                    <img src = "images/franklin-banner-large.jpeg" alt="Franklin City"
 
-                         srcset = 
+                    <source media="(max-width: 599px)" srcset = "images/franklin-banner-small.jpeg 600w">
 
-                         "images/franklin-banner-small.jpeg 600w,
+                    <source media="(max-width: 1013px)" srcset = "images/franklin-banner-medium.jpeg">
 
-                          images/franklin-banner-medium.jpeg 1026w,
+                    <source media="(max-width: 2000px)" srcset = "images/franklin-banner-large.jpeg">
+                    
+                     <img src = "images/franklin-banner-large.jpeg" alt="Franklin City">
 
-                          images/franklin-banner-large.jpeg 1200w,">
                 </picture>
 
 
