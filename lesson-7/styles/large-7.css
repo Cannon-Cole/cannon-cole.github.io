@@ -1,0 +1,103 @@
+@media only screen and (min-width: 1014px ) {
+
+    nav ul
+    {
+        height: 5vw;
+        padding-bottom: 5%;
+        font-size: 2vw; 
+    }
+
+    nav ul.hide
+    {
+        height: 5vw;
+        padding-bottom: 5%;
+        font-size: 2vw; 
+    }
+
+    .banner-right-box
+    {
+        flex-direction: column;
+    }
+
+    main figure 
+    { 
+
+        width: 98%;
+        height: 30vw;
+        margin-left: 3vw;
+        margin-bottom: -5%;
+        padding: 0px;
+        box-shadow: 0px 0px 0px gray;
+    }
+
+    div.right-box
+    {
+        display: flex;
+        flex-direction: column;
+        flex-grow: .5;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        border: 1px solid black;
+        box-shadow: 3px 3px 5px gray;
+    }
+
+    main h2
+    {
+        font-size: 280%;
+        margin-top: 1%;
+        margin-bottom: 0px;
+    }
+    
+    div.current
+    {
+        margin: 0px;
+    }
+
+    div.current p
+    {
+        font-size: 50%;
+        margin-top: 2%;
+        margin-bottom: 1%;
+    }
+
+    div.current img
+    {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .highlow p
+    {
+        font-size: 110%;
+        margin-bottom: 2%;
+    }
+
+    .highlow p:last-child
+    {
+        margin-bottom: 4%;
+    }
+
+
+    .conditions p
+    {
+        font-size: 110%;
+    }
+
+    main section.forecast h3
+    {
+        font-size: 270%;
+    }
+
+    article h3
+    {
+
+        font-size: 201%;
+    }
+
+    article p
+    {
+        margin-top: 1vw;
+        margin-bottom: -.5vw;
+        font-size: 2vw;
+    }
+}
