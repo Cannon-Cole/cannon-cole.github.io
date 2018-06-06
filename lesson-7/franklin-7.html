@@ -46,11 +46,11 @@
         <nav>
             <ul id="primaryNav" class="hide">
                 <li><a href="#">Home</a></li>
-                <li class="active"><a href="#">Franklin</a></li>
+                <li><a href="franklin-7.html">Franklin</a></li>
                 <li><a href="#">Greenville</a></li>
                 <li><a href="#">Springfield</a></li>
                 <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
             </ul>		
         </nav>
 
@@ -90,16 +90,21 @@
                             
                         </div>
 
+                        <div class="hl-conditions">
+                        
                             <div class="highlow">
-                                <p>High: 111°F</p>  
-                                <p>Low: 66°F</p>  
+                                <p>High:<span id="high">111</span>°F</p>  
+                                <p>Low:<span id="low">66</span>°F</p>  
                             </div>
 
                             <div class="conditions">
                                 <p>Precipitation: 0%</p>  
-                                <p>Wind Speed: 5 mph N</p>  
+                                <p>Wind Speed: <span id="wind-speed">5</span> mph N</p>
+                                <p>Wind Chill: <span id="wind-chill"></span> °F</p> 
                                 
                             </div> 
+                            
+                        </div>
                         
                     </section>
                     
@@ -149,7 +154,7 @@
                     Franklin city has reached a record level temperature. Never in the history of Franklin city has the weather reached 111°F.
                 </p>
 
-                <img src="images/articleimage.png" alt="City image">
+                <img src="images/articleimage.jpg" alt="City image">
 
             </article>		  
 
@@ -170,6 +175,7 @@
         </footer>
 
         <script type="text/javascript" src="scripts/currentdate.js"></script>
+        <script type="text/javascript" src="scripts/windchill.js"></script>
         <script type="text/javascript" src="scripts/toggle.js"></script>
 
     </body>
