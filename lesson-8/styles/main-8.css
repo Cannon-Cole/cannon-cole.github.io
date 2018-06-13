@@ -11,7 +11,7 @@ table
 
 th, td
 {
-    padding: 3%;
+    padding: .6em;
 }
 
 thead tr:nth-child(1)
@@ -26,28 +26,12 @@ thead tr:nth-child(2)
     color: white;
 }
 
-td
-{
-    white-space: nowrap;
-     width: 1vw;
-}
-
-tbody tr:nth-child(1)
+tbody tr:nth-child(odd)
 {
     background-color: #e7f0ed;
 }
 
-tbody tr:nth-child(2)
-{
-    background-color: #e7ffed;
-}
-
-tbody tr:nth-child(3)
-{
-    background-color: #e7f0ed;
-}
-
-tbody tr:nth-child(4)
+tbody tr:nth-child(even)
 {
     background-color: #e7ffed;
 }
@@ -57,17 +41,6 @@ tbody tr:nth-child(4)
     background-color: #628ca6;
     color: white;
 }
-
-tbody tr:nth-child(5)
-{
-    background-color: #e7f0ed;
-}
-
-tbody tr:nth-child(6)
-{
-    background-color: #e7ffed;
-}
-
 
 tfoot tr:nth-child(1)
 {
