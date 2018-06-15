@@ -320,7 +320,7 @@ form
 form input
 {
     width: 100%;
-    min-height: 50px;
+    min-height: 44px;
     display: block;
     margin-top: 2px;
     margin-bottom: 10px;
@@ -382,7 +382,6 @@ fieldset
 label.radio
 {
     display: inline-block;
-    font-size: 1em;
 }
 
 #currentvalue
