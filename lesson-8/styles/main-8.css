@@ -382,6 +382,7 @@ fieldset
 label.radio
 {
     display: inline-block;
+    font-size: 1em;
 }
 
 #currentvalue
