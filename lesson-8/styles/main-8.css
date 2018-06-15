@@ -349,6 +349,11 @@ form label input:required:valid
     border: 1px solid green;
 }
 
+input[type="textarea"]
+{
+    min-height: 100px;
+}
+
 input[type="submit"]
 {
     border: 3px solid #6B89A2;
