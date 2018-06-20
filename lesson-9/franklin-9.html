@@ -83,10 +83,10 @@
                         
                         <div class="current">
                             
-                            <p>Sunny</p>
+                            <p><span id="weatherdescription"></span></p>
                             
                             <picture>
-                                <img src="images/sun.png" width = "100" height="100" alt="Placeholder">
+                                <img id="icon" src="images/sun.png" width = "100" height="100" alt="Placeholder">
                                 
                             </picture>
                             
@@ -95,16 +95,15 @@
                         <div class="hl-conditions">
                         
                             <div class="highlow">
-                                
-                                <p>High: &nbsp; <span id="high">111</span>°F</p>  
-                                <p>Low: &nbsp; <span id="low">66</span>°F</p>  
+                                <p>Temperature:&nbsp;<span id="temperature">°F</span></p>
+                                <p>High: &nbsp; <span id="high"></span>°F</p>  
+                                <p>Low: &nbsp; <span id="low"></span>°F</p>  
                                 
                             </div>
 
                             <div class="conditions">
                                 
-                                <p>Precipitation: 0%</p>  
-                                <p>Wind Speed: &nbsp; <span id="wind-speed">5</span> &nbsp; mph N</p>
+                                <p>Wind Speed: &nbsp; <span id="wind-speed"></span> &nbsp; mph N</p>
                                 <p>Wind Chill: &nbsp; <span id="wind-chill"></span>°F</p> 
                                 
                             </div> 
@@ -175,13 +174,14 @@
             </section>
             <section class="footer-bar">
                 <h2>Footer Bar</h2>
-                &copy;2018 All Rights Reserved | Three City Weather | <span id="currentdate">Current Date Placeholder</span>
+                &copy;2018 All Rights Reserved | Three City Weather | &nbsp;<span id="currentdate">Current Date Placeholder</span>&nbsp; |&nbsp; Weather data thanks to OpenWeatherMap
             </section>
         </footer>
 
         <script src="scripts/currentdate.js"></script>
-        <script src="scripts/windchill.js"></script>
         <script src="scripts/toggle.js"></script>
+        <script src="scripts/weatherapi.js"></script>
+        <script src="scripts/windchill.js"></script>
 
     </body>
 </html>

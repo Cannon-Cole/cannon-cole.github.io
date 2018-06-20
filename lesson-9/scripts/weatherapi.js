@@ -1,4 +1,4 @@
-/*var weatherRequest = new XMLHttpRequest;
+var weatherRequest = new XMLHttpRequest;
 
 weatherRequest.open("GET", "https://api.openweathermap.org/data/2.5/weather?id=4156210&units=imperial&APPID=0e08266a16752f6b3e85f662e36178a6", true);
 
@@ -10,59 +10,15 @@ weatherRequest.onload = function()
 
     console.log(weatherData);
 
-}*/
+    document.getElementById("weatherdescription").innerHTML = weatherData.weather["0"].description;
 
-var townRequest = new XMLHttpRequest;
+    document.getElementById("icon").src = "https://openweathermap.org/img/w/" + weatherData.weather[0].icon +".png";
 
-townRequest.open("GET", "https://byui-cit230.github.io/weather/data/towndata.json", true);
+    document.getElementById("temperature").innerHTML = weatherData.main.temp;
 
-townRequest.send();
+    document.getElementById("high").innerHTML = weatherData.main.temp_max;
 
-townRequest.onload = function()
-{
-    var townData = JSON.parse(townRequest.responseText); 
+    document.getElementById("low").innerHTML = weatherData.main.temp_min;
 
-    console.log(townData);
-
-    /***************************
-    load franklin
-    ***************************/
-    
-     document.getElementById("franklin-name").innerHTML = townData.towns["0"].name;
-    
-    document.getElementById("franklin-motto").innerHTML = townData.towns["0"].motto;
-
-    document.getElementById("franklin-yearfounded").innerHTML = townData.towns["0"].yearFounded;
-
-    document.getElementById("franklin-population").innerHTML = townData.towns["0"].currentPopulation;
-
-    document.getElementById("franklin-annualrainfall").innerHTML = townData.towns["0"].averageRainfall;
-    
-    /***************************
-    load greenville
-    ***************************/
-    
-    document.getElementById("greenville-name").innerHTML = townData.towns["1"].name;
-    
-    document.getElementById("greenville-motto").innerHTML = townData.towns["1"].motto;
-
-    document.getElementById("greenville-yearfounded").innerHTML = townData.towns["1"].yearFounded;
-
-    document.getElementById("greenville-population").innerHTML = townData.towns["1"].currentPopulation;
-
-    document.getElementById("greenville-annualrainfall").innerHTML = townData.towns["1"].averageRainfall;
-    
-    /***************************
-    load springfield
-    ***************************/
-    
-    document.getElementById("springfield-name").innerHTML = townData.towns["3"].name;
-    
-    document.getElementById("springfield-motto").innerHTML = townData.towns["3"].motto;
-
-    document.getElementById("springfield-yearfounded").innerHTML = townData.towns["3"].yearFounded;
-
-    document.getElementById("springfield-population").innerHTML = townData.towns["3"].currentPopulation;
-
-    document.getElementById("springfield-annualrainfall").innerHTML = townData.towns["3"].averageRainfall;
+    document.getElementById("wind-speed").innerHTML = weatherData.wind.speed
 }
