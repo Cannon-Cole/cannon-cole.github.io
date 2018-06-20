@@ -211,12 +211,6 @@
         font-size: 2em;
     }
 
-    section.town-data
-    {
-        display: contents;
-        line-height: 2;
-    }
-
     section
     {
         display: flex;
@@ -230,7 +224,13 @@
         display: flex;
         flex-direction: row;
     }
-    
+ 
+    section.town-data
+    {
+        display: contents;
+        line-height: 2;
+    }
+
     section picture img
     {
         padding: 5px;
@@ -247,23 +247,33 @@
         margin-top: 4px;
         width: 70%;
     }
-    
+
     #franklin-name
     {
         font-size: 1.5em;
         font-weight: bold;
     }
-    
-     #greenville-name
-    {
-        font-size: 1.5em;
-        font-weight: bold;
-    }
-    
-     #springfield-name
+
+    #greenville-name
     {
         font-size: 1.5em;
         font-weight: bold;
     }
 
+    #springfield-name
+    {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    footer section.contact
+    {
+        justify-content: center;
+    }
+
+    footer section.footer-bar
+    {
+        margin-left: 0px;
+        justify-content: center;
+    }
 }
