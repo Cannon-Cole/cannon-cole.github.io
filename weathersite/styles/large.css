@@ -155,6 +155,7 @@
         border: 1px solid black;
         box-shadow: 1px 1px 5px black;
         line-height: 3;
+        width: 50%;
     }
 
     section.town-data
