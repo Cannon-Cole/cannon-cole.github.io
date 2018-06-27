@@ -169,13 +169,6 @@
         box-shadow: 1px 1px 5px black;
     }
 
-    section.town-data section:nth-child(1)
-    {
-        margin-left: 0px;
-        width: 33%;
-        flex-direction: column;
-    }
-
     section.town-data section:nth-child(2)
     {
         margin-left: 1%;
@@ -190,6 +183,12 @@
         flex-direction: column;
     }
 
+     section.town-data section:nth-child(4)
+    {
+        margin-left: 1%;
+        width: 33%;
+        flex-direction: column-reverse;
+    }
     section picture img
     {
         width: 100%;
