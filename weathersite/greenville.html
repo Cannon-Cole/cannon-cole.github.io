@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
         <meta name="description" content="Weather report for Greenville city">
-        
+
         <title>
             Greenville City Weather Report
         </title>
@@ -16,12 +16,12 @@
 
     <body onload="loadGreenville();">
 
-       <header includefile="header.html">
+        <header includefile="header.html">
 
         </header>
 
         <nav includefile="nav.html">
-		
+
         </nav>
 
         <main>
@@ -42,52 +42,52 @@
                 </figure>
 
                 <div class="right-box">
-                    
+
                     <h2>Greenville</h2>
-                    
+
                     <section class="weather-summary">
-                        
+
                         <h2>Weather Summary</h2>
-                        
+
                         <div class="current">
-                            
+
                             <p><span id="weatherdescription"></span></p>
-                            
+
                             <picture>
                                 <img id="icon" src="images/sun.png" width = "100" height="100" alt="Placeholder">
-                                
+
                             </picture>
-                            
+
                         </div>
 
                         <div class="hl-conditions">
-                        
+
                             <div class="highlow">
                                 <p>Temperature:&nbsp;<span id="temperature">°F</span></p>
                                 <p>High: &nbsp; <span id="high"></span>°F</p>  
                                 <p>Low: &nbsp; <span id="low"></span>°F</p>  
-                                
+
                             </div>
 
                             <div class="conditions">
-                                
+
                                 <p>Wind Speed: &nbsp; <span id="wind-speed"></span> &nbsp; mph N</p>
                                 <p>Wind Chill: &nbsp; <span id="wind-chill"></span>°F</p> 
-                                
+
                             </div> 
-                            
+
                         </div>
-                        
+
                     </section>
-                    
+
                 </div>
-                
+
             </div>
-            
+
             <section class="forecast">
-                
+
                 <h3>Ten Day Forecast</h3>
-                
+
                 <table>
                     <thead>
                         <tr>
@@ -133,15 +133,14 @@
         </main>
 
         <footer includefile="footer.html">
-            
+
         </footer>
 
-        <script src="scripts/currentdate.js"></script>
         <script src="scripts/toggle.js"></script>
-        <script src="scripts/windchill.js"></script>
-        <script src="scripts/weatherapi.js"></script>
+        <script src="scripts/towninfo.js"></script>
         <script src="scripts/include.js"></script>
-         <script src="scripts/activemenu.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/activemenu.js"></script>
 
     </body>
 </html>

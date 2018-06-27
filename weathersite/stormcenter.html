@@ -16,12 +16,12 @@
 
     <body>
 
-         <header includefile="header.html">
+        <header includefile="header.html">
 
         </header>
 
         <nav includefile="nav.html">
-   	
+
         </nav>
 
         <main>
@@ -30,7 +30,7 @@
                 <fieldset id="storminfo">
 
                     <legend>Contact Information</legend>
-                    
+
                     <label>Full name <span class="required">*</span>
                         <input type="text" name="name" required pattern="[A-za-z]{5,}">
                     </label>
@@ -44,7 +44,7 @@
                         <input type="tel" name="phonenumber" required> 
                     </label>
                 </fieldset>
-                
+
                 <fieldset id="storminfo">
 
                     <legend>Storm Information</legend>
@@ -68,7 +68,7 @@
                             <option value="Springfield">Springfield</option>
                         </select>
                     </label>
-                    
+
                     <label>Storm Severity (1-10)
                         <input type="range" value="5" min="1" max="10" name="severity" oninput="adjustValue(this.value)" onchange="adjustValue(this.value)">
                         <span id="currentvalue">Severity: 5</span>
@@ -110,14 +110,15 @@
 
         </main>
 
-         <footer includefile="footer.html">
-            
+        <footer includefile="footer.html">
+
         </footer>
 
-        <script src="scripts/currentdate.js"></script>
         <script src="scripts/toggle.js"></script>
-        <script src="scripts/slider.js"></script>
+        <script src="scripts/towninfo.js"></script>
         <script src="scripts/include.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/activemenu.js"></script>
 
     </body>
 </html>

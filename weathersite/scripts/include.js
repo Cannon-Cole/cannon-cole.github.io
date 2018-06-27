@@ -23,6 +23,7 @@ function include() {
     }
     
     wayfinder();
+    loadDate();
 }
 
 include();  // initial function call

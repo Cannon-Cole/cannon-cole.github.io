@@ -1,13 +1,18 @@
-var dateObject = new Date();
+function loadDate()
+{
 
-var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var dateObject = new Date();
 
-var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-var monthDisplay = dateObject.getMonth();
-var dayDisplay = dateObject.getDate();
-var yearDisplay = dateObject.getFullYear();
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-var dateOutput = days[dateObject.getDay()] + ", " + dayDisplay + " " + months[monthDisplay] + " " + yearDisplay;
+    var monthDisplay = dateObject.getMonth();
+    var dayDisplay = dateObject.getDate();
+    var yearDisplay = dateObject.getFullYear();
 
-document.getElementById("currentdate").innerHTML = dateOutput;
+    var dateOutput = days[dateObject.getDay()] + ", " + dayDisplay + " " + months[monthDisplay] + " " + yearDisplay;
+
+    document.getElementById("currentdate").innerHTML = dateOutput;
+
+}

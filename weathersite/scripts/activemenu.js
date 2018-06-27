@@ -9,11 +9,7 @@ function wayfinder()
 
     if (pageHREF != "") 
     { 
-        var menu = document.querySelectorAll("nav ul li a"); 
-
-        console.log(menu.length);
-        console.log(menu[0]);
-        console.log(menu[1]);
+        var menu = document.querySelectorAll("nav ul li a");
         
         for (var i = 0; i < menu.length; i++) 
         { 
