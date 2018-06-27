@@ -293,19 +293,9 @@ footer section.footer-bar
     color: #E7EFF5;
 }
 
-section.weather-summary h2
+.sectionhide
 {
-    display: none;
-}
-
-section.contact h2
-{
-    display: none;
-}
-
-section.footer-bar h2
-{
-    display: none;
+   display: none; 
 }
 
 form
