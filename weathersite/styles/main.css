@@ -437,3 +437,9 @@ section.town-data
 {
     display: none;
 }
+
+#headingtitle
+{
+    font-size: 1.5em;
+    font-weight: bold;
+}
