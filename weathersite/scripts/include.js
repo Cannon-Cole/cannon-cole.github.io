@@ -21,6 +21,8 @@ function include() {
 
         }
     }
+    
+    wayfinder();
 }
 
 include();  // initial function call

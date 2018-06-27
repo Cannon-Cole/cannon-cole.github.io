@@ -443,3 +443,8 @@ section.town-data
     font-size: 1.5em;
     font-weight: bold;
 }
+
+.active
+{
+    background-color: rgba(6,34,58,.1);
+}
