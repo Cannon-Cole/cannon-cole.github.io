@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head includefile="styles.html">
+
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+        <meta name="description" content="Report weather from your location">
+
+        <title>
+            Storm Center
+        </title>
+
+    </head>
+
+    <body>
+
+         <header includefile="header.html">
+
+        </header>
+
+        <nav includefile="nav.html">
+   	
+        </nav>
+
+        <main>
+
+            <form action="thanks.html" method="get">
+                <fieldset id="storminfo">
+
+                    <legend>Contact Information</legend>
+                    
+                    <label>Full name <span class="required">*</span>
+                        <input type="text" name="name" required pattern="[A-za-z]{5,}">
+                    </label>
+
+                    <label>
+                        Email
+                        <input type="email" placeholder="name@domain.com" name="email">
+                    </label>
+
+                    <label>Phone number <span class="required">*</span>
+                        <input type="tel" name="phonenumber" required> 
+                    </label>
+                </fieldset>
+                
+                <fieldset id="storminfo">
+
+                    <legend>Storm Information</legend>
+                    <label>Zip code<span class="required"> *</span>
+                        <input type="number" name="zip" required> 
+                    </label>
+
+                    <label>Storm Date<span class="required"> *</span>
+                        <input type="date" name="date" required> 
+                    </label>
+
+                    <label>Storm Type
+                        <input list="stormtypes" name="type" placeholder="Select from list or choose your own"> 
+                    </label>
+
+                    <label>Storm Region
+                        <select name="region">
+                            <option value="Select Region">SelectRegion</option>
+                            <option value="Franklin">Franklin</option>
+                            <option value="Greenville">Greenville</option>
+                            <option value="Springfield">Springfield</option>
+                        </select>
+                    </label>
+                    
+                    <label>Storm Severity (1-10)
+                        <input type="range" value="5" min="1" max="10" name="severity" oninput="adjustValue(this.value)" onchange="adjustValue(this.value)">
+                        <span id="currentvalue">Severity: 5</span>
+                    </label>
+
+                </fieldset>
+
+                <fieldset id="indangergroup">
+                    <legend>User in danger</legend>
+                    <label class="radio">Yes &nbsp;<input type="radio" value="Yes" name="indanger">
+                    </label>
+
+                    <label class="radio">Maybe &nbsp;<input type="radio" value="Maybe" name="indanger">
+                    </label>
+
+                    <label class="radio">No &nbsp;<input type="radio" value="No" name="indanger">
+                    </label>
+
+
+                </fieldset>
+
+                <label class="additionalinfo" >Additional information or comments
+                    <input type="textarea" name="additional" placeholder="Additional information or comments"> </label>
+
+                <label>
+                    <input type="submit" value="Report Weather"></label>
+
+
+
+                <datalist id="stormtypes">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+
+            </form>
+
+        </main>
+
+         <footer includefile="footer.html">
+            
+        </footer>
+
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/toggle.js"></script>
+        <script src="scripts/slider.js"></script>
+        <script src="scripts/include.js"></script>
+
+    </body>
+</html>

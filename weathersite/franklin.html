@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head includefile="styles.html">
+
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+        <meta name="description" content="Weather report for Franklin city">
+        
+        <title>
+            Franklin City Weather Report
+        </title>
+
+    </head>
+
+    <body onload="loadFranklin();">
+
+        <header includefile="header.html">
+
+        </header>
+
+        <nav includefile="nav.html">
+		
+        </nav>
+
+        <main>
+            <div class="banner-right-box">
+                <figure>
+                    <picture class="banner-large-small">
+
+                        <source media="(max-width: 599px)" srcset = "images/franklin-banner-small.jpeg">
+
+                        <source media="(max-width: 1023px)" srcset = "images/franklin-banner-medium.jpeg">
+
+                        <source media="(max-width: 2000px)" srcset = "images/franklin-banner-large.jpeg">
+
+                        <img src = "images/franklin-banner-large.jpeg" alt="Franklin City">
+
+                    </picture>
+
+                </figure>
+
+                <div class="right-box">
+
+                    <h2>Franklin</h2>
+
+                    <section class="weather-summary">
+
+                        <h2>Weather Summary</h2>
+
+                        <div class="current">
+
+                            <p><span id="weatherdescription"></span></p>
+
+                            <picture>
+                                <img id="icon" src="images/sun.png" width = "100" height="100" alt="Placeholder">
+
+                            </picture>
+
+                        </div>
+
+                        <div class="hl-conditions">
+
+                            <div class="highlow">
+                                <p>Temperature:&nbsp;<span id="temperature">°F</span></p>
+                                <p>High: &nbsp; <span id="high"></span>°F</p>  
+                                <p>Low: &nbsp; <span id="low"></span>°F</p>  
+
+                            </div>
+
+                            <div class="conditions">
+
+                                <p>Wind Speed: &nbsp; <span id="wind-speed"></span> &nbsp; mph N</p>
+                                <p>Wind Chill: &nbsp; <span id="wind-chill"></span>°F</p> 
+
+                            </div> 
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+            <section class="forecast">
+
+                <h3>Ten Day Forecast</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>  
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <article>
+                <h3>Franklin Breaks Record</h3>
+                <p class="town-article">
+                    Franklin city has reached a record level temperature. Never in the history of Franklin city has the weather reached 111°F.
+                </p>
+
+                <img src="images/articleimage.jpg" alt="City image">
+
+            </article>		  
+
+        </main>
+
+        <footer includefile="footer.html">
+            
+        </footer>
+
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/toggle.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/weatherapi.js"></script>
+        <script src="scripts/include.js"></script>
+
+
+    </body>
+</html>
