@@ -9,7 +9,7 @@ function include() {
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4) {
                     if (this.status == 200) { allElements[i].innerHTML = this.responseText;}
-                    if (this.status == 404) { allElements[i].innerHTML = "Page not found!";}
+                    if (this.status == 400) { allElements[i].innerHTML = "Page not found!";}
                     allElements[i].removeAttribute('includefile');
                     include();
                 }
