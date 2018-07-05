@@ -15,7 +15,7 @@ html,body {
 }
 
 body {
-    background:url('../img/congruent_pentagon.png');
+    background:url('../images/congruent_pentagon.png');
 }
 
 .container {
@@ -39,7 +39,7 @@ body {
     width:250px;
     height:100px;
     float:left;
-    background:url('../img/logo.png');
+    background:url('../images/logo.png');
     background-color:rgb(235, 253, 212);
     opacity:1.0;
 }
@@ -87,7 +87,7 @@ body {
     left:20px;
     width:600px;
     height:250px;
-    background:url('../img/head_image.jpg');
+    background:url('../images/head_image.jpg');
     border-radius:5px;
 }
 

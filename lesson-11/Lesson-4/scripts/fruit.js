@@ -8,10 +8,10 @@ $(function(){
                        {title:'Mangoes', quantity:5},
                        {title:'Tomatoes', quantity:30} ];
 
-$.each(fruitBasket, function(index, element){
-    $('.fruits').append('<li>We have ' + element.quantity + " " + element.title + '</li>')
-})
-    
+    $.each(fruitBasket, function(index, element){
+        $('.fruits').append('<li>We have ' + element.quantity + " " + element.title + '</li>')
+    })
+
     $('.fruits > li').each(function(index, element){
         $(element).css('background-color','rgb(100,200,0)');
     })
