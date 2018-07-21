@@ -1,36 +1,68 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head includefile="styles.html">
+    <head>
+
+        <link rel="stylesheet" href="styles/normalize.css">
+
+        <link rel="stylesheet" href="styles/main-8.css">
+
+        <link rel="stylesheet" media="screen and (min-width: 600px)" href="styles/medium-8.css">
+
+        <link rel="stylesheet" media="screen and (min-width: 1024px)" href="styles/large-8.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
         <meta charset="utf-8">
 
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-        <meta name="description" content="Report weather from your location">
+        <meta name="description" content="Weather report for Franklin city">
 
         <title>
-            Storm Center
+            Franklin City Weather Report
         </title>
 
     </head>
 
     <body>
 
-        <header includefile="header.html">
+        <header>
+
+            <img src="images/logo.png" alt="placeholder">
+
+            <div class="headings">
+
+                <h1>Three City Weather</h1>
+
+                <h1 class="subheading">
+                    Weather to you
+                </h1>
+
+            </div>
+
+            <div class="button-holder">
+                <button onclick="toggleMenu()" class="navbutton">&#9776;</button></div>
 
         </header>
 
-        <nav includefile="nav.html">
-
+        <nav>
+            <ul id="primaryNav" class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a href="franklin-8.html">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
+            </ul>		
         </nav>
 
         <main>
 
             <form action="thanks.html" method="get">
-                <fieldset id="userinfo">
+                <fieldset id="storminfo">
 
                     <legend>Contact Information</legend>
-
+                    
                     <label>Full name <span class="required">*</span>
                         <input type="text" name="name" required pattern="[A-za-z]{5,}">
                     </label>
@@ -44,7 +76,7 @@
                         <input type="tel" name="phonenumber" required> 
                     </label>
                 </fieldset>
-
+                
                 <fieldset id="storminfo">
 
                     <legend>Storm Information</legend>
@@ -68,7 +100,7 @@
                             <option value="Springfield">Springfield</option>
                         </select>
                     </label>
-
+                    
                     <label>Storm Severity (1-10)
                         <input type="range" value="5" min="1" max="10" name="severity" oninput="adjustValue(this.value)" onchange="adjustValue(this.value)">
                         <span id="currentvalue">Severity: 5</span>
@@ -91,12 +123,10 @@
                 </fieldset>
 
                 <label class="additionalinfo" >Additional information or comments
-                    <input type="text" name="additional" >
-                </label>
+                    <input type="textarea" name="additional" placeholder="Additional information or comments"> </label>
 
                 <label>
-                    <input type="submit" value="Report Weather">
-                </label>
+                    <input type="submit" value="Report Weather"></label>
 
 
 
@@ -112,16 +142,23 @@
 
         </main>
 
-        <footer includefile="footer.html">
-
+        <footer>
+            <section class="contact">
+                <h2>Contact</h2>
+                Contact information placeholder
+                999.999.9999
+                123 Main St. Anytown, US 99999
+                Google Map
+            </section>
+            <section class="footer-bar">
+                <h2>Footer Bar</h2>
+                &copy;2018 All Rights Reserved | Three City Weather | <span id="currentdate">Current Date Placeholder</span>
+            </section>
         </footer>
 
-        <script src="scripts/slider.js"></script>
-        <script src="scripts/toggle.js"></script>
-        <script src="scripts/towninfo.js"></script>
-        <script src="scripts/include.js"></script>
         <script src="scripts/currentdate.js"></script>
-        <script src="scripts/activemenu.js"></script>
+        <script src="scripts/toggle.js"></script>
+        <script src="scripts/slider.js"></script>
 
     </body>
 </html>

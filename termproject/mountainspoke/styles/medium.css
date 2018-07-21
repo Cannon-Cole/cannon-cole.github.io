@@ -1,0 +1,80 @@
+@media only screen and (min-width: 600px) {
+
+    header
+    {
+        justify-content: center;
+        margin-right: 0px;
+        padding: 0px;
+    }
+
+    nav ul 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #fff1db;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    nav ul.hide
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #dabc90;
+        padding: none;
+        margin: none;
+    }
+
+    nav ul li 
+    {
+        flex-grow: 1;
+        text-align: center;
+        font-size: 2.5vw;
+        margin: 0px;
+        height: 5vw;
+        line-height: 200%;
+        vertical-align: middle;
+    }
+
+    nav ul li a 
+    {
+        text-decoration: none;
+        border-top: none;
+        color: black;
+        padding: 0px;
+        height: 100%;
+        border-right: 1px solid black;
+    }
+
+    nav ul li:last-child a
+    {
+        border-bottom: none;
+        border-right: none;
+    }
+
+    button.navbutton
+    {
+        display: none;
+    }
+
+    .banner-right-box
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .active
+    {
+        background-color: #dabc90;
+    }
+
+    .otherpageswrapper
+    {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0px;
+        padding: 0px;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head includefile="styles.html">
+
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+        <meta name="description" content="Weather report for Greenville city">
+
+        <title>
+            Greenville City Weather Report
+        </title>
+
+    </head>
+
+    <body onload="loadGreenville();">
+
+        <header includefile="header.html">
+
+        </header>
+
+        <nav includefile="nav.html">
+
+        </nav>
+
+        <main>
+            
+            <div class="mapholder">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.931441035523!2d-111.09290618415363!3d45.67227662755549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1532157610339" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>	</div>  
+
+        </main>
+        
+        <form action="thanks.html" method="get">
+                <fieldset id="contact">
+
+                    <legend>Contact Information</legend>
+
+                    <label>Full name <span class="required">*</span>
+                        <input type="text" name="name" required>
+                    </label>
+
+                    <label>
+                        Email <span class="required">*</span>
+                        <input type="email" placeholder="name@domain.com" name="email">
+                    </label>
+
+                    <label class="comment">Comment <span class="required">*</span>
+                        <textarea name="message" rows="1" cols="30" required></textarea> 
+                    </label>
+                    
+                <label>
+                    <input class="submit" type="submit" value="Send Comment"></label>
+                </fieldset>
+
+
+            </form>
+
+        <footer includefile="footer.html">
+
+        </footer>
+
+        <script src="scripts/toggle.js"></script>
+        <script src="scripts/towninfo.js"></script>
+        <script src="scripts/include.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/activemenu.js"></script>
+        <script src="scripts/weatherapi.js"></script>
+
+    </body>
+</html>
