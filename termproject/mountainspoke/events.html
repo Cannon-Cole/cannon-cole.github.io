@@ -26,85 +26,108 @@
 
         <main>
 
+            <h2>Cycle the Continental Divide Annual Event</h2>
+
+            <p>Every year we host the incredible Cycle the Continental Divide event. This is a wonder event for dedicated cyclists. You take a long journay across of the the continent divides of the United States. It is a long journey so we will follow along in a car to keep you safe and carry all of your food and equipment so you don't have to worry about anything.</p>
+
+            <div class="ulholder">
+                <ul>
+                    <li>Held from the 1st day of June to the last day of July every year</li>
+                    <li>You can one of four routes.</li>
+                    <ul>
+                        <li>Great</li>
+                        <li>Great Basin</li>
+                        <li>Eastern</li>
+                        <li>St. Lawrence</li>
+                    </ul>
+                    <li>$1,000 fee</li>
+                </ul>
+            </div>
+
             <form action="thanks.html" method="get">
                 <fieldset id="userinfo">
 
-                    <legend>Contact Information</legend>
+                    <legend>Event Registration</legend>
 
                     <label>Full name <span class="required">*</span>
-                        <input type="text" name="name" required pattern="[A-za-z]{5,}">
+                        <input type="text" name="name" autofocus required>
                     </label>
 
                     <label>
-                        Email
-                        <input type="email" placeholder="name@domain.com" name="email">
+                        Email <span class="required">*</span>
+                        <input type="email" placeholder="name@domain.com" name="email" required>
                     </label>
 
-                    <label>Phone number <span class="required">*</span>
-                        <input type="tel" name="phonenumber" required> 
+                    <label>Phone number
+                        <input type="tel" name="phonenumber"> 
                     </label>
+
+                    <label>State <span class="required">*</span>
+                        <select required>
+                            <option value="">Select your state</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select>			
+                    </label>
+
+                    <br><br>
+
+                    <label class="comment">Special accommodations or comments
+                        <textarea name="message" rows="1" cols="30"></textarea> 
+                    </label>
+
+                    <label>
+                        <input class="submit" type="submit" value="Submit Registration"></label>
                 </fieldset>
-
-                <fieldset id="storminfo">
-
-                    <legend>Storm Information</legend>
-                    <label>Zip code<span class="required"> *</span>
-                        <input type="number" name="zip" required> 
-                    </label>
-
-                    <label>Storm Date<span class="required"> *</span>
-                        <input type="date" name="date" required> 
-                    </label>
-
-                    <label>Storm Type
-                        <input list="stormtypes" name="type" placeholder="Select from list or choose your own"> 
-                    </label>
-
-                    <label>Storm Region
-                        <select name="region">
-                            <option value="Select Region">SelectRegion</option>
-                            <option value="Franklin">Franklin</option>
-                            <option value="Greenville">Greenville</option>
-                            <option value="Springfield">Springfield</option>
-                        </select>
-                    </label>
-
-                    <label>Storm Severity (1-10)
-                        <input type="range" value="5" min="1" max="10" name="severity" oninput="adjustValue(this.value)" onchange="adjustValue(this.value)">
-                        <span id="currentvalue">Severity: 5</span>
-                    </label>
-
-                </fieldset>
-
-                <fieldset id="indangergroup">
-                    <legend>User in danger</legend>
-                    <label class="radio">Yes &nbsp;<input type="radio" value="Yes" name="indanger">
-                    </label>
-
-                    <label class="radio">Maybe &nbsp;<input type="radio" value="Maybe" name="indanger">
-                    </label>
-
-                    <label class="radio">No &nbsp;<input type="radio" value="No" name="indanger">
-                    </label>
-
-
-                </fieldset>
-
-                <label class="additionalinfo" >Additional information or comments
-                    <input type="text" name="additional" > </label>
-
-                <label>
-                    <input type="submit" value="Report Weather"></label>
-
-
-
-                <datalist id="stormtypes">
-                    <option value="Flash Flood">
-                    <option value="Hail">
-                    <option value="Hurricane">
-                    <option value="Thunderstorm">
-                    <option value="Tornado">
-                </datalist>
 
             </form>
 

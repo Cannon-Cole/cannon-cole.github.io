@@ -37,6 +37,11 @@ header h1
     color: #997033;
 }
 
+h2, p
+{
+    text-align: center;
+}
+
 button.navbutton
 {
     margin-top: 43%;
@@ -179,7 +184,12 @@ footer
 
 .sectionhide
 {
-    display: none; 
+    display: none;
+}
+
+.hide .active
+{
+     background-color: #cba162;
 }
 
 .active
@@ -220,6 +230,11 @@ section.tourone, .tourtwo
     font-size: 1em;
 }
 
+form
+{
+    margin: 1em;
+}
+
 form input, textarea
 {
     width: 100%;
@@ -241,5 +256,56 @@ form input, textarea
 
 .thanks
 {
- text-align: center;   
+    text-align: center;   
+}
+
+form label input:required
+{
+    border: 1px solid red;
+}
+
+form label input:required:valid
+{
+    border: 1px solid green;
+}
+
+form label select:required
+{
+    border: 1px solid red;
+}
+
+form label select:required:valid
+{
+    border: 1px solid green;
+}
+
+.required
+{
+    color: red;
+}
+
+.bikeforsale
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 1em;
+}
+
+.bikeforsale img
+{
+    max-height: 300px;
+    margin: 0.5em;
+}
+
+.organize
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.description
+{
+    display: flex;
+    flex-direction: column;
 }
