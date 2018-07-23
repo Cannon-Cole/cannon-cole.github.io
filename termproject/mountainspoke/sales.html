@@ -6,7 +6,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-        <meta name="description" content="Weather report for Greenville city">
+        <meta name="description" content="Sales - Moutain Spoke">
 
         <title>
             Greenville City Weather Report
@@ -14,7 +14,7 @@
 
     </head>
 
-    <body onload="loadGreenville();">
+    <body>
 
         <header includefile="header.html">
 
@@ -26,7 +26,7 @@
 
         <main>
 
-            <section class="bikeforsale">
+            <section id="bike1" class="bikeforsale">
                 <h2>Blue lightning</h2>
                 <div class="organize">
                     <img src="images/bike1.jpg">
@@ -44,7 +44,7 @@
                 </div>
             </section>
 
-            <section class="bikeforsale">
+            <section id="bike2" class="bikeforsale">
                 <h2>X-Caliber</h2>
                 <div class="organize">
                     <img src="images/bike2.jpg">
@@ -62,7 +62,7 @@
                 </div>
             </section>
 
-            <section class="bikeforsale">
+            <section id="bike3" class="bikeforsale">
                 <h2>Roscoe</h2>
                 <div class="organize">
                     <img src="images/bike3.jpg">
@@ -80,17 +80,22 @@
                 </div>
             </section>
 
+            <button id="left">&larr;</button>
+
+            <button id="right">&rarr;</button>
+
         </main>
 
         <footer includefile="footer.html">
 
         </footer>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="scripts/toggle.js"></script>
         <script src="scripts/include.js"></script>
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/activemenu.js"></script>
-        <script src="scripts/weatherapi.js"></script>
+        <script src="scripts/slider.js"></script>
 
     </body>
 </html>

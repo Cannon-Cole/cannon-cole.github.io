@@ -15,6 +15,6 @@ priceRequest.onload = function()
     for(var i = 1; i < priceData.prices.length + 1; i++)
     {
         console.log(i * 2 - 1);
-            td[i * 2 - 1].innerHTML = priceData.prices[i - 1];
+        td[i * 2 - 1].innerHTML = priceData.prices[i - 1];
     }
 }

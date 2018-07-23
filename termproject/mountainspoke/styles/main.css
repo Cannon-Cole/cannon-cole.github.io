@@ -336,3 +336,8 @@ th
     font-weight: bolder;
     border-bottom: 1px solid black; 
 }
+
+#bike2, #bike3
+{
+    display: none;
+}
