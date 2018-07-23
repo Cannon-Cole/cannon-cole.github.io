@@ -1,5 +1,3 @@
-/* This main css file contains the default rules and is geared toward the small/phone view */
-
 body 
 {
     font-size: 16px;
@@ -199,9 +197,7 @@ footer
 section.tourone, .tourtwo
 {
     border: 1px solid black;
-    margin: 3px;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: 1em;
     padding: 3px;
     text-align: center;
 }
@@ -229,8 +225,16 @@ section.tourone, .tourtwo
     font-size: 1em;
 }
 
+.newline
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.6em;
+}
+
 form
 {
+    display: flex;
     margin: 1em;
 }
 
@@ -238,7 +242,6 @@ form input, textarea
 {
     width: 100%;
     min-height: 44px;
-    display: block;
     margin-top: 2px;
     margin-bottom: 10px;
 }
@@ -268,12 +271,42 @@ form label input:required:valid
     border: 1px solid green;
 }
 
+form label input:invalid
+{
+    border: 1px solid red;
+}
+
+form label input:valid
+{
+    border: 1px solid green;
+}
+
 form label select:required
 {
     border: 1px solid red;
 }
 
 form label select:required:valid
+{
+    border: 1px solid green;
+}
+
+form label select:invalid
+{
+    border: 1px solid red;
+}
+
+form label select:valid
+{
+    border: 1px solid green;
+}
+
+textarea:invalid
+{
+    border: 1px solid red;
+}
+
+textarea:valid
 {
     border: 1px solid green;
 }

@@ -6,10 +6,10 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-        <meta name="description" content="Report weather from your location">
+        <meta name="description" content="Events - Mountain Spoke">
 
         <title>
-            Storm Center
+            Events - Mountain Spoke
         </title>
 
     </head>
@@ -50,16 +50,12 @@
                     <legend>Event Registration</legend>
 
                     <label>Full name <span class="required">*</span>
-                        <input type="text" name="name" autofocus required>
+                        <input type="text" name="name"  autofocus required pattern="[A-Za-z]{0,}" placeholder="Letters only" >
                     </label>
 
                     <label>
                         Email <span class="required">*</span>
                         <input type="email" placeholder="name@domain.com" name="email" required>
-                    </label>
-
-                    <label>Phone number
-                        <input type="tel" name="phonenumber"> 
                     </label>
 
                     <label>State <span class="required">*</span>
@@ -116,10 +112,12 @@
                             <option value="WV">West Virginia</option>
                             <option value="WI">Wisconsin</option>
                             <option value="WY">Wyoming</option>
-                        </select>			
+                        </select>	
                     </label>
 
-                    <br><br>
+                    <label class="newline">Phone number
+                        <input type="tel" name="phonenumber" pattern="[0-9-]{7,10}" placeholder="Numbers and - only" > 
+                    </label>
 
                     <label class="comment">Special accommodations or comments
                         <textarea name="message" rows="1" cols="30"></textarea> 
