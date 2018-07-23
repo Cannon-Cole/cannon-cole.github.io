@@ -235,6 +235,7 @@ section.tourone, .tourtwo
 form
 {
     display: flex;
+    justify-content: center;
     margin: 1em;
 }
 
@@ -244,21 +245,6 @@ form input, textarea
     min-height: 44px;
     margin-top: 2px;
     margin-bottom: 10px;
-}
-
-.submit
-{
-    border: 0.04em solid black;
-    border-radius: 1em;
-    line-height: 1.5em;
-    vertical-align: middle;
-    max-height: 1.5em;
-    background-color: rgba(153, 112, 51, 0.1);
-}
-
-.thanks
-{
-    text-align: center;   
 }
 
 form label input:required
@@ -322,7 +308,21 @@ textarea:valid
     flex-direction: column;
     border: 1px solid black;
     margin: 1em;
+}
 
+.submit
+{
+    border: 0.04em solid black;
+    border-radius: 1em;
+    line-height: 1.5em;
+    vertical-align: middle;
+    max-height: 1.5em;
+    background-color: rgba(153, 112, 51, 0.1);
+}
+
+.thanks
+{
+    text-align: center;   
 }
 
 .bikeforsale img
