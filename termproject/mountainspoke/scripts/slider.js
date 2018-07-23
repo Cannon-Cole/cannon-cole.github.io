@@ -5,9 +5,6 @@ $(document).ready(function() {
 
     $("#left").click(function() {
 
-        $("#left").attr("id", "leftfrozen");
-        $("#right").attr("id", "rightfrozen");
-
         $("#bike" + which).fadeOut(transitionSpeed, function() {
 
             which--;
@@ -22,9 +19,6 @@ $(document).ready(function() {
     });
 
     $("#right").click(function() {
-
-        $("#right").attr("id", "rightfrozen");
-        $("#left").attr("id", "leftfrozen");
 
         $("#bike" + which).fadeOut(transitionSpeed, function() {
 
