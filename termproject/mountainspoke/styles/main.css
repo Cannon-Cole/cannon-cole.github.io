@@ -189,7 +189,7 @@ footer
 
 .hide .active
 {
-     background-color: #cba162;
+    background-color: #cba162;
 }
 
 .active
@@ -308,4 +308,31 @@ form label select:required:valid
 {
     display: flex;
     flex-direction: column;
+}
+
+.tableholder
+{
+    display: flex;
+    justify-content: center;
+}
+
+table
+{
+    margin: 1em;
+    font-size: 1.4em;
+    border-collapse: collapse;
+}
+
+td
+{
+    padding-left: 1em;
+    padding-right: 1em;
+    border-bottom: 1px solid black; 
+    text-align: left;
+}
+
+th
+{
+    font-weight: bolder;
+    border-bottom: 1px solid black; 
 }

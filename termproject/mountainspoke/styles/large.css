@@ -1,6 +1,8 @@
 @media only screen and (min-width: 1014px ) {
-
-    body{
-        background-color: aliceblue;
+    
+    table
+    {
+        font-size: 3em;
     }
+    
 }
