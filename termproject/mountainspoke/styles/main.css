@@ -179,6 +179,12 @@ footer
     background-color: #fff1db;
 }
 
+.footer-bar a
+{
+    text-decoration: none;
+    color: black;
+}
+
 .sectionhide
 {
     display: none;
