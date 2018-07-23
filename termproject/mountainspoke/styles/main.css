@@ -80,12 +80,11 @@ nav li
 }
 
 nav ul li a
-
-{   padding: 2%;
+{   
+    padding: 2%;
     text-decoration: none;
-    color: #06223A;
     border-top: 1px solid rgba(0,0,0,0.5);
-
+    color: black;
 }
 
 nav ul li:last-child a
@@ -290,6 +289,7 @@ form label select:required:valid
     flex-direction: column;
     border: 1px solid black;
     margin: 1em;
+
 }
 
 .bikeforsale img
@@ -301,7 +301,7 @@ form label select:required:valid
 .organize
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .description
@@ -340,4 +340,27 @@ th
 #bike2, #bike3
 {
     display: none;
+}
+
+#left
+{
+    text-align: center;
+}
+
+.buttonholder
+{
+    display: flex;
+    justify-content: center;
+}
+
+.slidernav
+{
+    height: 3em;
+    width: 3em;
+    background-color: #fff1db;
+    border-radius: 1em;
+    border: none;
+    margin: 0.5em;
+    font-size: 1.5em;
+    color: #997033;
 }

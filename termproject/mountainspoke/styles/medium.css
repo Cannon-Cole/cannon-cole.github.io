@@ -82,4 +82,10 @@
     {
         font-size: 2em;
     }
+
+    .organize
+    {
+        justify-content: center;
+        flex-direction: row;
+    }
 }
