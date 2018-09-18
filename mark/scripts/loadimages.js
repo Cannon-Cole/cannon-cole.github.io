@@ -1,7 +1,7 @@
 function loadImages(begin){
 
     console.log("hello");
-    var folder = "images/watercolorpaintings/";
+    var folder = "images/watercolorpaintings";
     var load = 20;
     var loadAmount = 0;
     var total = 0;
@@ -9,7 +9,6 @@ function loadImages(begin){
     var numButtons = 0;
 
     $.ajax({
-        type : "GET",
         url : folder,
         success: function (data) {
             console.log("asdf");
