@@ -9,9 +9,10 @@ function loadImages(begin){
     var numButtons = 0;
 
     $.ajax({
+        type : "GET",
         url : folder,
         success: function (data) {
-console.log("asdf");
+            console.log("asdf");
             //removes images
             var myNode = document.getElementById("gridcontainer");
             while (myNode.firstChild) {
