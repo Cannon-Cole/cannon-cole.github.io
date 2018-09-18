@@ -1,6 +1,6 @@
 function loadImages(begin){
 
-    var folder = "cannon-cole/images/watercolorpaintings";
+    var folder = "cannon-cole.github.io/mark/images/watercolorpaintings/";
     var load = 20;
     var loadAmount = 0;
     var total = 0;
