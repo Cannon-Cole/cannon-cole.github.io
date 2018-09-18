@@ -11,7 +11,7 @@ function loadImages(begin){
     $.ajax({
         url : folder,
         success: function (data) {
-
+console.log("asdf");
             //removes images
             var myNode = document.getElementById("gridcontainer");
             while (myNode.firstChild) {
