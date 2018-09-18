@@ -11,15 +11,18 @@ function loadImages(begin){
         url : folder,
         success: function (data) {
 
+            //removes images
             var myNode = document.getElementById("gridcontainer");
             while (myNode.firstChild) {
                 myNode.removeChild(myNode.firstChild);
             }
+            //removes buttons
             var myNode = document.getElementById("buttoncontainer");
             while (myNode.firstChild) {
                 myNode.removeChild(myNode.firstChild);
             }
 
+            //loads images
             $(data).find("a").attr("href", function (i, val) {
                 if( val.match(/\.(jpe?g|JPG|png|gif)$/) ) {
                     start--
