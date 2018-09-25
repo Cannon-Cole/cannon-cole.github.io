@@ -100,36 +100,5 @@
         float: right;
     }
 
-    .artselection
-    {
 
-    }
-
-    .artselection a
-    {
-        text-decoration: none;
-        color: white;
-        font-size: 2em;
-        text-align: center;
-        border: 3px solid white;
-        margin-bottom: .5em;
-        padding: .3em;
-
-    }
-
-    .artselection img
-    {
-        width: 100%;
-        margin-bottom: 2em;
-    }
-
-    .artselectionbox
-    {
-        
-    }
-
-    .artselectionbox img
-    {
-   
-    }
 }

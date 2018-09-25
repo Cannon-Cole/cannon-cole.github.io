@@ -255,13 +255,14 @@ div.buffer
     font-size: 2em;
     text-align: center;
     border: 3px solid white;
-    margin-bottom: .5em;
     padding: .3em;
-
+    margin-bottom: .2em;
 }
 
 .artselection img
 {
-    width: 100%;
-    margin-bottom: 2em;
+    display: none;
+    text-align-last: center;
+    max-width: 100%;
+    margin-bottom: 4em;
 }
