@@ -10,7 +10,12 @@
         font-size: 1.5em;
     }
 
-    nav ul 
+    header nav
+    {
+        height: 1em;
+    }
+
+    header nav ul 
     {
         display: flex;
         flex-direction: row;
@@ -21,7 +26,7 @@
         margin-left: 10%;
     }
 
-    nav ul.hide
+    header nav ul.hide
     {
         display: flex;
         flex-direction: row;
@@ -30,25 +35,33 @@
         margin: none;
     }
 
-    nav ul li
+    header.show
     {
-        flex-grow: 1;
-        text-align: center;
-        font-size: .8em;
-        margin: 0px;
-        height: 2em;
-        line-height: 200%;
+        height: 12em;
     }
 
-    nav ul li a
+    header.hide
+    {
+        height: 12em;
+    }
+
+    header nav ul li
+    {
+        flex-grow: 1;
+        margin: 0px;
+        height: 2.4em;
+    }
+
+    header nav ul li a
     {
         text-decoration: none;
         padding: 0px;
         border-right: 1px solid white;
         border-bottom: 1px solid transparent;
+        line-height: 2em;
     }
 
-    nav ul li:last-child a
+    header nav ul li:last-child a
     {
         border-bottom: none;
         border-right: none;
@@ -63,13 +76,60 @@
     {
         column-count: 2;
         column-gap: 1em;
-
     }
 
     .grid-img img
     {
-
-        margin-bottom: 1em;
     }
 
+    img.artist
+    {
+        height: 17em;
+        margin: 1em;
+        margin-bottom: .5em;
+        margin-top: .2em;
+        float: left;
+    }
+
+    img.artistart
+    {
+        height: 25em;
+        margin: 1em;
+        margin-bottom: .5em;
+        margin-top: .2em;
+        float: right;
+    }
+
+    .artselection
+    {
+
+    }
+
+    .artselection a
+    {
+        text-decoration: none;
+        color: white;
+        font-size: 2em;
+        text-align: center;
+        border: 3px solid white;
+        margin-bottom: .5em;
+        padding: .3em;
+
+    }
+
+    .artselection img
+    {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .artselectionbox
+    {
+        
+    }
+
+    .artselectionbox img
+    {
+   
+    }
 }

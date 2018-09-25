@@ -1,6 +1,5 @@
 function wayfinder()
 {
-
     var urlString = document.location.href; 
 
     var urlArray = urlString.split('/'); 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head includefile="styles.html">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+        <meta name="description" content="The home of Mark Smith's art. Waterpaints, acrylics, mixed media, photography, greeting cards, and reproduction prints.">
+
+        <title>
+            Mark Smith Art Gallery
+        </title>
+        <script src="scripts/loadimages.js"></script>
+    </head>
+
+    <body onload='loadImages(0, "/images/watercolorpaintings/")'>
+
+            <header includefile="header.html" id="header" class="hide">
+
+            </header>
+
+        <main>
+
+            <div id="gridcontainer" class="grid-container">
+            </div>
+
+            <div id="buttoncontainer" class="imagebutton-holder">
+            </div>
+
+        </main>
+
+        <footer includefile="footer.html">
+
+        </footer>
+
+        <script src="scripts/currentyear.js"></script>
+        <script src="scripts/toggle.js"></script>
+        <script src="scripts/include.js"></script>
+        <script src="scripts/activemenu.js"></script>
+
+    </body>
+</html>
