@@ -1,10 +1,18 @@
+function textChange()
+{
+    window.dispatchEvent(new Event('resize'));
+    window.dispatchEvent(new Event('resize'));
+    window.dispatchEvent(new Event('resize'));
+}
+
 function loadImages(begin, folder){
-    
+
     var load = 20;
     var loadAmount = 0;
     var total = 0;
     var start = begin * 20;
     var numButtons = 0;
+    var available = "";
 
     //gets list of images from directory
     $.ajax({
@@ -30,7 +38,19 @@ function loadImages(begin, folder){
                         //loads 20 images at a time
                         loadAmount++;
                         if(loadAmount <= load){
-                            $(".grid-container").append( "<div class='grid-img'> <img src='" + val +"'> <div class='overlay'>" + val + "</div></div>");
+                            var hover = val.split("-");
+                            if(hover[2] == "true")
+                            {
+                                available = "Available";
+                            }
+                            else
+                            {
+                                available = "Sold";
+                            }
+
+                            hover[3] = hover[3].split(".")[0];
+
+                            $(".grid-container").append( "<div class='grid-img'> <img src='" + val +"'> <div class='overlay'><p>" + available + "<br>$" + hover[1] + "<br>ID: " + hover[3] + "</p></div></div>");
                         }} 
                 }});
 
@@ -46,10 +66,14 @@ function loadImages(begin, folder){
 
             for(var i = 1; i < numButtons; i++)
             {
-                $(".imagebutton-holder").append("<button onclick='loadImages(" + (i - 1) + ")'>" + i + "</button>");
+                $(".imagebutton-holder").append("<button onclick='loadImages(" + (i - 1) + "," + "\"" + folder + "\"" + ")'>" + i +"</button>");
             }
+            //scrolls to top of page
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+            textChange();
         }
     });
-    //scrolls to top of page
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+
 }
