@@ -1,8 +1,24 @@
 function textChange()
 {
-    window.dispatchEvent(new Event('resize'));
-    window.dispatchEvent(new Event('resize'));
-    window.dispatchEvent(new Event('resize'));
+    var allimg = $(".grid-img").toArray();
+
+    for(var i = 0; i <= allimg.length - 1; i++)
+    {
+        if(allimg[i].firstChild.nextSibling.width < allimg[i].firstChild.nextSibling.height)
+        {
+            var size = allimg[i].firstChild.nextSibling.width/7.5;
+
+            allimg[i].lastChild.style.fontSize = size + "px";
+        }
+        else
+        {
+            var size = allimg[i].firstChild.nextSibling.height/7.5;
+
+            allimg[i].lastChild.style.fontSize = size + "px";
+        }
+
+
+    }
 }
 
 function loadImages(begin, folder){
@@ -50,7 +66,7 @@ function loadImages(begin, folder){
 
                             hover[3] = hover[3].split(".")[0];
 
-                            $(".grid-container").append( "<div class='grid-img'> <img src='" + val +"'> <div class='overlay'><p>" + available + "<br>$" + hover[1] + "<br>ID: " + hover[3] + "</p></div></div>");
+                            $(".grid-container").append( "<div class='grid-img'> <img src='" + val +"'> <div class='overlay' onclick='createLightbox(\"-"+ hover[3] +"\")'><p>" + available + "</p><p>$" + hover[1] + "</p><p>ID: " + hover[3] + "</p></div></div>");
                         }} 
                 }});
 
@@ -71,7 +87,8 @@ function loadImages(begin, folder){
             //scrolls to top of page
             document.body.scrollTop = document.documentElement.scrollTop = 0;
 
-            textChange();
+            clearTimeout(resizeTimer);
+            var resizeTimer = setTimeout(textChange, 1100);
         }
     });
 
