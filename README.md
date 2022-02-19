@@ -1,2 +1,2 @@
 # cannon-cole.github.io
-Front end websites demonstrating competency in a variety of front end concepts.
+An assortment of front end web page projects I did while getting my degree. Uses HTML, CSS, JavaScript, and JQuery. Includes API, forms, modules, and styling.
